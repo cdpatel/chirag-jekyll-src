@@ -3,23 +3,25 @@
 ---
 @charset "utf-8";
 
-
+// importing bootstrap variables file early so that those variables can be used in 
+// defining out variables down below before importing jekyll scss files which use these variables.
+@import "bootstrap_variables";
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family: $font-family-base;
+$base-font-size:   $font-size-base;
+$small-font-size:  $font-size-small;
+$base-line-height: $line-height-base;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+//$text-color:       $text-color;
+$background-color: $body-bg;
+$brand-color:      $brand-primary;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       $gray;
+$grey-color-light: $gray-light;
+$grey-color-dark:  $gray-dark;
 
 // Width of the content area
 $content-width:    800px;
@@ -43,10 +45,12 @@ $on-laptop:        800px;
 }
 
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+		//"bootstrap_variables",
+		"bootstrap",
         "layout",
         "syntax-highlighting"
 ;
+
