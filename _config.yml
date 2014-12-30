@@ -12,3 +12,15 @@ github_username:  cdpatel
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"	  
