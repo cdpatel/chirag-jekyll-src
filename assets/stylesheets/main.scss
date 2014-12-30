@@ -5,8 +5,10 @@
 
 // importing bootstrap variables file early so that those variables can be used in 
 // defining out variables down below before importing jekyll scss files which use these variables.
-@import "bootstrap_variables";
-
+@import 
+	"bootstrap_variables",
+	"bootswatch_flatly_variables";
+	
 // Our variables
 $base-font-family: $font-family-base;
 $base-font-size:   $font-size-base;
@@ -50,7 +52,8 @@ $on-laptop:        800px;
         "base",
 		//"bootstrap_variables",
 		"bootstrap",
-        "layout",
+        "bootswatch_flatly",
+		"layout",
         "syntax-highlighting"
 ;
 
