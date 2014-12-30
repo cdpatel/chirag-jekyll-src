@@ -14,18 +14,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/photography/">Photography</a></li>
-            <li><a href="/blog/">Blog</a></li>
-			<li class="dropdown">
+			{% assign pages_list = site.pages %}
+  			{% assign group = 'navigation_main' %}
+  			{% include pages_list_menu.html %}
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-				  {% for page in site.pages %}
-          			{% if page.title %}
-				  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          			{% endif %}
-        		   {% endfor %}
+				{% assign pages_list = site.pages %}
+  				{% assign group = 'navigation_more' %}
+  				{% include pages_list_menu.html %}
 			  </ul>
             </li>
           </ul>
