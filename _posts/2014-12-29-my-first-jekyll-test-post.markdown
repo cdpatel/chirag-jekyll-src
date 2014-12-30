@@ -1,7 +1,12 @@
 ---
 title:  "My first jekyll test blog post"
 date:   2014-12-29 21:30:00
-categories: jekyll update
+categories: 
+- jekyll
+- tools
+tags:
+- web
+- development
 ---
 
 
