@@ -5,8 +5,12 @@ permalink: /about/
 groups: navigation_menu, navigation_more
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+A software enthusiast's personal web site to share software tips, tricks and research. 
+I also would like to share some of the photos I've been taking.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I built the site to take advantage of free hosting at [GitHub Pages](http://pages.github.com).
+I used [jekyll](http://jekyllrb.com) for CMS (templating).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I am very excited about building this site with these technologies and plan to share my thoughts on photography, technology, software and more.
+
+See you around!

@@ -8,7 +8,7 @@
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
-          <li><a href="{{ site.linkedin_profile }}">Linkedin profile</a></li>
+          <li><a href="http://{{ site.linkedin_profile }}">Linkedin profile</a></li>
         </ul>
       </div>
 
@@ -60,6 +60,18 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/assets/javascripts/bootstrap.js"></script>
+	{% if page.custom_js %}
+	  {% for js_file in page.custom_js %}
+	  <script src='/assets/javascripts/{{ js_file }}.js' type="text/javascript"></script>
+	  {% endfor %}
+	{% endif %}
+	{% if page.jsinit_file %}
+	  {% for js_include in page.jsinit_file %}
+		<!--{% capture jsi_fn %} {{ js_include }} '.html' {% endcapture %} -->
+	  	{% include {{ js_include }} %}
+	  {% endfor %}
+	{% endif %}
+
     <!--script src="../../assets/js/docs.min.js"></script-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--script src="../../assets/js/ie10-viewport-bug-workaround.js"></script-->
