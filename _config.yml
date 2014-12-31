@@ -8,7 +8,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://chirag.software" # the base hostname & protocol for your site
 twitter_username: cdpatel
 github_username:  cdpatel
+disqus_shortname: softwareartist
 linkedin_profile: www.linkedin.com/pub/chirag-patel/3/bb7/203/
+comments_enabled: true
 
 # Build settings
 markdown: kramdown
@@ -21,6 +23,7 @@ defaults:
       layout: "post"
       categories: photography technology
       tags: [landscape, portrait, computers, technology, software]
+      comments_enabled: true
   - scope:
       path: ""
       type: "pages"
